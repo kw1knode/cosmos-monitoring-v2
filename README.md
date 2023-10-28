@@ -1,1 +1,0 @@
-# cosmos-monitoring-v2
