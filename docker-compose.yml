@@ -167,7 +167,7 @@ services:
     volumes:
       - ./govstat/chains.yml:/govstat/chains.yml
     environment:
-      - DISCORD_WEBHOOK_URL=https://discord.com/api/webhooks/your-webhook-id/your-webhook-token
+      - DISCORD_WEBHOOK_URL=${DISCORD_WEBHOOK}
       - SLEEP_TIME=43200 #IN SECONDS
     restart: unless-stopped
     networks:
