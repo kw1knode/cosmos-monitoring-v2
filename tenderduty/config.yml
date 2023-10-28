@@ -1,0 +1,41 @@
+---
+# controls whether the dashboard is enabled.
+enable_dashboard: yes
+# What TCP port the dashboard will listen on. Only the port is controllable for now.
+listen_port: 8888
+# hide_logs is useful if the dashboard will be posted publicly. It disables the log feed,
+# and obscures most node-related details. Be aware this isn't fully vetted for preventing
+# info leaks about node names, etc.
+hide_logs: no
+# How long to wait before alerting that a node is down.
+node_down_alert_minutes: 3
+
+# Should the prometheus exporter be enabled?
+prometheus_enabled: yes
+# What port should it listen on? For now only port is configurable.
+prometheus_listen_port: 28686
+
+# Global setting for pagerduty
+pagerduty:
+  # Should we use PD? Be aware that if this is set to no it overrides individual chain alerting settings.
+  enabled: no
+  # This is an API key, not oauth token, more details to follow, but check the v1 docs for more info
+  api_key: aaaaaaaaaaaabbbbbbbbbbbbbcccccccccccc
+  # Not currently used, but will be soon. This allows setting escalation priorities etc.
+  default_severity: alert
+
+# Discord settings
+discord:
+  # Alert to discord?
+  enabled: yes
+  # The webhook is set by right-clicking on a channel, editing the settings, and configuring a webhook in the intergrations section.
+  webhook: https://discord.com/api/webhooks/999999999999999999/zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+
+# Telegram settings
+telegram:
+  # Alert via telegram? Note: also supersedes chain-specific settings
+  enabled: yes
+  # API key ... talk to @BotFather
+  api_key: '5555555555:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'
+  # The group ID for the chat where messages will be sent. Google how to find this, will include better info later.
+  channel: "-12345678910"
