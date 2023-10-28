@@ -3,6 +3,7 @@
 DENOM= # junox junox for juno testnet
 BECH_PREFIX= # the global prefix for addresses. Defaults to i.e. juno
 MONITORING_SERVER= X.X.X.X
+DENOM_COEFF=1000000
 
 sudo ufw allow from $MONITORING_SERVER to any port 9100   #node-exporter
 sudo ufw allow from $MONITORING_SERVER to any port 9300   #cosmos-exporter
@@ -57,7 +58,7 @@ Group=cosmos-exporter
 TimeoutStartSec=0
 CPUWeight=95
 IOWeight=95
-ExecStart=/usr/local/bin/cosmos-exporter --denom ${DENOM} --denom-coefficient 1000000 --bech-prefix ${BECH_PREFIX} --tendermint-rpc tcp://localhost:26657 --node localhost:9090
+ExecStart=/usr/local/bin/cosmos-exporter --denom ${DENOM} --denom-coefficient ${DENOM_COEFF:-1000000} --bech-prefix ${BECH_PREFIX} --tendermint-rpc tcp://localhost:26657 --node localhost:9090
 Restart=always
 RestartSec=2
 LimitNOFILE=800000

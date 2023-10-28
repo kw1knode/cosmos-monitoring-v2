@@ -3,18 +3,6 @@ global:
   scrape_timeout: 10s
   evaluation_interval: 15s
 
-alerting:
-  alertmanagers:
-    - follow_redirects: true
-      scheme: http
-      timeout: 10s
-      api_version: v2
-      static_configs:
-        - targets: [alertmanager:9093]
-
-rule_files:
-  - /etc/prometheus/alerts/alert.rules
-
 scrape_configs:
   - job_name: prometheus
     metrics_path: /metrics
