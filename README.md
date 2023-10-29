@@ -1,5 +1,14 @@
 # COSMOS MONITORING
 
+### Dependencies
+
+```
+sudo apt install jq -y
+sudo apt install python3-pip -y
+sudo pip install yq
+```
+### Install docker compose
+https://docs.docker.com/engine/install/ubuntu/
 
 ### Install exporters on validator node
 ```
