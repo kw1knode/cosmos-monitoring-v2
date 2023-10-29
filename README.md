@@ -55,3 +55,23 @@ To add validator use command with specified `VALIDATOR_IP`, `PROM_PORT`, `VALOPE
 > example: ```~/cosmos-monitoring-v2/add_validator.sh 1.2.3.4 26660 cosmosvaloper1s9rtstp8amx9vgsekhf3rk4rdr7qvg8dlxuy8v cosmos1s9rtstp8amx9vgsekhf3rk4rdr7qvg8d6jg3tl cosmos```
 
 `docker restart prometheus`
+
+
+# Grafana Import
+
+
+Import custom dashboard
+
+1 Press "+" icon on the left panel and then choose **"Import"**
+
+![image](https://user-images.githubusercontent.com/50621007/160622732-aa9fe887-823c-4586-9fad-4c2c7fdf5011.png)
+
+2 Input grafana.com dashboard id `15991` and press **"Load"**
+
+![image](https://user-images.githubusercontent.com/50621007/160625753-b9f11287-a3ba-4529-96f9-7c9113c6df3a.png)
+
+3 Select Prometheus data source and press **"Import"**
+
+![image](https://user-images.githubusercontent.com/50621007/160623287-0340acf8-2d30-47e7-8a3a-56295bea8a15.png)
+
+4 Congratulations you have successfully configured Cosmos Validator Dashboard
