@@ -5,7 +5,7 @@
 ```
 sudo apt install jq -y
 sudo apt install python3-pip -y
-sudo pip install yq
+sudo pip install yq -y
 ```
 ### Install docker compose
 https://docs.docker.com/engine/install/ubuntu/
