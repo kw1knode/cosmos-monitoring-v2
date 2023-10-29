@@ -12,7 +12,7 @@ https://docs.docker.com/engine/install/ubuntu/
 
 ### Install exporters on validator node
 ```
-wget -O install_exporters.sh https://raw.githubusercontent.com/kw1knode/cosmos-monitoring-v2/main/install_exporters.sh && chmod +x install_exporters.sh && ./install_exporters.sh
+wget -O install_exporters.sh https://raw.githubusercontent.com/kw1knode/cosmos-monitoring-v2/main/install_exporters.sh && chmod +x install_exporters.sh
 ```
 ### Edit variables in script
 
@@ -23,6 +23,8 @@ wget -O install_exporters.sh https://raw.githubusercontent.com/kw1knode/cosmos-m
 | **BECH_PREFIX** | Prefix for chain addresses, for example, `agoric` for Agoric. You can find it in public addresses like this **agoric**_valoper1zyyz4m9ytdf60fn9yaafx7uy7h463n7alv2ete_ |
 | **DENOM_COEFF** | Prefix for chain coefficient, most cosmos chains are 1000000 |
 ```
+
+`./install_exporters.sh`
 
 Make sure prometheus is enabled in validator `config.toml` file
 
