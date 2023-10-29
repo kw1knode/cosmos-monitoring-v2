@@ -33,7 +33,7 @@ Type=simple
 Restart=always
 RestartSec=5
 ExecStart=/usr/local/bin/node_exporter \
-  --web.listen-address=":9199" 
+  --web.listen-address=":9100" 
 [Install]
 WantedBy=multi-user.target" | sudo tee -a /etc/systemd/system/node_exporter.service > /dev/null 
 
