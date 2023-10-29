@@ -14,7 +14,7 @@ https://docs.docker.com/engine/install/ubuntu/
 ```
 wget -O install_exporters.sh https://raw.githubusercontent.com/kw1knode/cosmos-monitoring-v2/main/install_exporters.sh && chmod +x install_exporters.sh
 ```
-### Edit variables in script
+### Edit variables in `install_exporters.sh`
 
 ```
 | KEY |VALUE |
