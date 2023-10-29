@@ -75,3 +75,6 @@ Import custom dashboard
 ![image](https://user-images.githubusercontent.com/50621007/160623287-0340acf8-2d30-47e7-8a3a-56295bea8a15.png)
 
 4 Congratulations you have successfully configured Cosmos Validator Dashboard
+
+# Credit and inspiration 
+https://github.com/kj89/cosmos_node_monitoring
