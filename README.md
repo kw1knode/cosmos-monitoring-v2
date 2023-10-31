@@ -16,6 +16,13 @@ wget -O install_exporters.sh https://raw.githubusercontent.com/kw1knode/cosmos-m
 ```
 ### Edit variables in `install_exporters.sh`
 
+```
+DENOM= # junox junox for juno testnet
+BECH_PREFIX= # the global prefix for addresses. Defaults to i.e. juno
+MONITORING_SERVER= X.X.X.X
+DENOM_COEFF=1000000
+```
+
 
 | KEY |VALUE |
 |---------------|-------------|
