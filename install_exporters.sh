@@ -73,7 +73,7 @@ WantedBy=multi-user.target" | sudo tee -a /etc/systemd/system/cosmos_exporter.se
 
 
 sudo systemctl daemon-reload
-udo systemctl start node_exporter
+sudo systemctl start node_exporter
 sudo systemctl enable node_exporter
 sudo systemctl start cosmos_exporter
 sudo systemctl enable cosmos_exporter
